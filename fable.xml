@@ -1,10 +1,98 @@
 <fable>
 	<page background="base1.jpg">
-  
+    
+    <agent text="Devastacion está a sua espera!" x="20" y="450" font-size="22"/>
+    
+    <agent text="Ajude Caleo a escapar da cidade destruida" x="20" y="400" on-touch="story2">
+      
+      <story2 text="Caleo estava perdido e a cidade estava soltando fumaças tóxicas" on-touch="story3"/>
+      <story3 text="Procure algo pelos cenários que possam ajudar ele a escapar em segurança"/>
+      
+      
+    </agent>
     <agent img="Tile (5).png" x="0" y="0" width="100" height="100"/>
-     <agent img="Tile (5).png" x="0" y="0" width="100" height="100"/>
-     <agent img="Tile (5).png" x="0" y="0" width="100" height="100"/>
-     <agent img="Tile (5).png" x="0" y="0" width="100" height="100"/>
-     <agent img="Tile (5).png" x="0" y="0" width="100" height="100"/>
+     <agent img="Tile (5).png" x="100" y="0" width="100" height="100"/>
+     <agent img="Tile (5).png" x="200" y="0" width="100" height="100"/>
+     <agent img="Tile (5).png" x="300" y="0" width="100" height="100"/>
+     <agent img="Tile (5).png" x="400" y="0" width="100" height="100"/>
+    
+    <agent img="jump1.png" x="400" y="100" width="50" height="50" on-touch="_NEXT_PAGE"/>
+      <agent img="esqueleto.png" x="200" y="90" width="100" height="100"/>
+    
+  
+    
+  </page>
+  
+  <page background="base0.jpg">
+    
+    <agent text="OH NÃO!,UMA GRANDE EXPLOSÃO" x="20" y="450" font-size="22"/>
+    
+    <agent text="Vou dar meia volta..." x="20" y="430" />
+      
+ 
+    <agent img="BGTile (2).png" x="0" y="0" width="100" height="100"/>
+     <agent img="BGTile (2).png" x="100" y="0" width="100" height="100"/>
+     <agent img="BGTile (2).png" x="200" y="0" width="100" height="100"/>
+     <agent img="BGTile (2).png" x="300" y="0" width="100" height="100"/>
+     <agent img="BGTile (2).png" x="400" y="0" width="100" height="100"/>
+    
+    <agent img="jump2.png" x="50" y="100" width="50" height="50" on-touch="_GOTO_PAGE:3"/>
+      <agent img="esqueleto.png" x="200" y="90" width="100" height="100"/>
+    
+  
+    
+  </page>
+  
+  <page background="doom.png">
+    
+    <agent text="Droga acabei me perdendo, mas sinto que meu pai está perto...Vou entrar no portal" color="red" x="20" y="450" font-size="22"/>
+    
+    <agent img="portal.png" x="400" y="100" width="100" height="150" on-touch="_GOTO_PAGE:4">
+      
+    </agent>
+    
+    <agent img="Tile (5).png" x="0" y="0" width="100" height="100"/>
+     <agent img="Tile (5).png" x="100" y="0" width="100" height="100"/>
+     <agent img="Tile (5).png" x="200" y="0" width="100" height="100"/>
+     <agent img="Tile (5).png" x="300" y="0" width="100" height="100"/>
+     <agent img="Tile (5).png" x="400" y="0" width="100" height="100"/>
+    
+    
+      <agent img="esqueleto.png" x="200" y="90" width="100" height="100"/>
+    
+  
+    
+  </page>
+  
+  <page background="base5.jpg">
+    
+    <agent text="MEU PAI! Preciso derotar ele!!" color="red" x="20" y="450" font-size="22"/>
+    
+    <agent img="boss.png" x="250" y="100" width="300" height="400" drop-zone="cut" >
+  
+    <cut img="explosion.png"  />
+      <cut text="PARABENS VOCE ZEROU!"/>
+      
+    
+    <agent img="portal.png" x="400" y="100" width="100" height="150" on-touch="portal-2"/>
+  
+    <portal-2 img="portal2.png"/>
+      
+      
+      </agent>
+    
+<agent img="espada1.png" x="60" y="100" width="65" height="75" draggable="true" on-drop="cut"/>
+    
+    <agent img="Tile (5).png" x="0" y="0" width="100" height="100"/>
+     <agent img="Tile (5).png" x="100" y="0" width="100" height="100"/>
+     <agent img="Tile (5).png" x="200" y="0" width="100" height="100"/>
+     <agent img="Tile (5).png" x="300" y="0" width="100" height="100"/>
+     <agent img="Tile (5).png" x="400" y="0" width="100" height="100"/>
+    
+      <agent img="esqueleto.png" x="200" y="90" width="100" height="100"/>
+    
+    
+  
+    
   </page>
 </fable>
